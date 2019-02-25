@@ -6,8 +6,10 @@
     </head>
     <body>
         <?php
-        for ($i=0; $i == 50; $i++) {
-        echo [$i] .'=42' . '<br>';
+        $vetor=array();
+        for ($i=0; $i <= 50; $i++) {
+            $vetor[$i]=42;
+        echo "o vetor na posição [".$i."]" .$vetor[$i] . '<br>';
         }
         ?>
     </body>
