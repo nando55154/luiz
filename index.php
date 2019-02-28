@@ -1,16 +1,25 @@
 <!DOCTYPE html>
+
 <html>
-    <head> 
+    <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
         <?php
-        $vetor=array();
-        for ($i=0; $i <= 50; $i++) {
-            $vetor[$i]=42;
-        echo "o vetor na posição [".$i."]" .$vetor[$i] . '<br>';
-        }
+        
+        for($i = 1; $i <= 100; $i++)
+{
+    $divisores = 0;
+    for($j = $i; $j >= 1; $j--){
+        if (($i % $j) == 0) {
+            $divisores++;
+                         } 
+    }
+    if ($divisores == 2){
+        echo $i . ', ';
+    }
+}
         ?>
     </body>
 </html>
