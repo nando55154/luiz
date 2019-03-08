@@ -7,8 +7,8 @@
     </head>
     <body>
         <?php
-        
-        for($i = 1; $i <= 100; $i++)
+    function primos_0a100 () {
+    for($i = 1; $i <= 100; $i++)
 {
     $divisores = 0;
     for($j = $i; $j >= 1; $j--){
@@ -20,6 +20,8 @@
         echo $i . ', ';
     }
 }
-        ?>
+    }
+    primos_0a100()
+    ?>
     </body>
 </html>
